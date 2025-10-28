@@ -1,1 +1,73 @@
-Le film raconte l'histoire de Blanche et Léa, deux amies qui trouvent l’amour d'une manière inattendue. Blanche craquait pour Alexandre et Léa avait un copain, Fabien. Un jour, Léa confesse qu’elle va avoir une aventure avec un homme, et pendant ce temps, Blanche et Fabien se rapprochent et tombent amoureux. Quand Léa revient, elle se sépare de Fabien et se rapproche d’Alexandre. Finalement, les amies se racontent la vérité et elles acceptent la relation de chacune.
+<!DOCTYPE html>
+<head>
+    <title>Correction de la critique du film</title>
+    <link rel="stylesheet" href="./feuille_de_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <section id="ToujoursVisible">
+        <p style="font-size: x-large; font-weight: bold; text-decoration: underline;">Résumé (dans l'encadré)</p>
+        <p id="resume">Le film raconte l'histoire de Blanche et Léa, deux amies qui trouvent l’amour d'une manière inattendue. Blanche craquait pour Alexandre et Léa avait un copain, Fabien. Un jour, 
+        Léa confesse qu’elle va avoir une aventure avec un homme, et pendant ce temps, Blanche et Fabien se rapprochent et tombent amoureux. Quand Léa revient, elle se sépare de Fabien 
+        et se rapproche d’Alexandre. Finalement, les amies se <span class="presque">racontent</span> la vérité et <span class="presque">elles</span> acceptent la relation de chacune.</p>
+        <p style="font-size: x-large; font-weight: bold; text-decoration: underline;">Critique</p>
+        <p id="critique">Comment peut-on tomber amoureuse de l’ex-copain d’une amie ?  : <span class="NON">un Eric Rohmer film</span> <br>
+        En 103 minutes, Rohmer nous régale d'une histoire d’amour bien racontée avec Léa, Blanche, Fabien et Alexandre. On a beaucoup aimé le film et <span class="presque">on le note à</span> 8 étoiles sur 10.<br>
+        Tout d’abord, l’histoire <span class="NON">était</span> accrocheuse car elle aborde une situation morale entre Léa et Blanche : sortir avec <span class="presque">l’ami</span> d’une amie. Dans le film, à cause des problèmes de Blanche pour trouver une 
+        solution à son engouement avec Fabien, le copain de Léa, on peut voir la contradiction entre ce qu’on dit et ce qu’on fait. Bien que l’histoire soit captivante, le film échoue parfois car il y a <span class="proposition">des scènes très longues 
+        et un peu lentes</span> qui peuvent ennuyer le public. <br>
+        Ensuite, les personnages ne sont pas nombreux, en fait, ils sont quatre, mais ils sont bien développés. Chacun a une personnalité forte et différente qui permet l’histoire d’être <span class="NON">vivant</span>. À propos des décors, les paysages avaient 
+        l’air sublime et il y a des vraies réussites dans l'utilisation des couleurs dans le film. En effet, le réalisateur a joué avec les nuances de bleu, vert et rouge pour représenter la situation sentimentale des personnages. Cependant, ce qui est un peu 
+        décevant c'est le manque de musique.<br>
+        Enfin, <i>« L’ami de mon amie »</i> est un film qui montre que nous ne pouvons pas choisir qui nous aimons, ni qui nous aime. On vous recommande ce film si vous aimez des histoires <span class="presque">pas</span> traditionnelles et si vous êtes dans 
+        le cinéma indépendant c’est <span class="NON">une</span> à ne pas rater car avec son charme, ce film français ne déçoit pas.
+        </p>
+        <button id="showErr" name="showErr" onclick="AfficherErr()">Afficher là où il a des erreurs</button><br>
+        <ul id="lexiqueErreurs" style="visibility: hidden;">
+            <li><span class="NON">Rouge</span> = Erreur (presque) grave</li>
+            <li><span class="presque">Orange</span> = Erreur pas grave mais pour aller plus loin</li>
+            <li><span class="proposition">Vert</span> = Pas une erreur, juste des modifications pour aller plus loin</li>
+        </ul>
+        <button id="showCorr" name="showCorr" style="visibility: visible;" onclick="AfficherCorr()">Afficher la correction</button>
+    </section>
+    <section id="Correction">
+        <p style="font-size: x-large; font-weight: bold; text-decoration: underline;">Correction &#x1F589;</p>
+        <p>Attention, les boites d'entrée sont sensibles à la casse, si dans la correction c'est une majuscule alors il faudra écrire une majuscule, vous avez 3 tentatives par boîtes d'entrée</p>
+        <p class="catCorr" style="color: rgb(192, 0, 0)">A modifier de toute urgence &cross;</p>
+        <div id="CNON" class="divcorr"style="padding-left: 25px; padding-right: 15px;">
+            <p class="intit">&centerdot; un Eric Rohmer Film</p>
+            <p>Cette formulation est valable en anglais mais là c'est du français :( il faut remettre les mots dans le bon ordre (en plus il en manque un). Indice : C'est un film de qui ? (p.s. Il faut écrire la réponse entière)&nbsp;:&emsp;<input type="text"  id="RepEric"  name="RepEric"  size="25" />&nbsp;<button id="corrEric" name="corrEric" onclick="CorrigerEric()">Vérifier</button>&emsp;<span id="Eric"></span></p>
+            
+            <p class="intit">&centerdot; était (accrocheuse)</p>
+            <p>Ce qui ne va pas ici est le temps employé, qui ne concorde pas avec le verbe suivant, au présent. Indice : Dans cet exemple on serait plutôt dans la narration&nbsp;:&emsp;L'histoire&nbsp;<input type="text"  id="RepEtait"  name="RepEtait"  size="4" />&nbsp;inéteressante&nbsp;<button id="corrEtait" name="corrEtait" onclick="CorrigerEtait()">Vérifier</button>&emsp;<span id="Etait"></span></p>
+            
+            <p class="intit">&CenterDot; vivant</p>
+            <p>UN histoire ?</p>
+
+            <p class="intit">&CenterDot; une (à ne pas rater)</p>
+            <p>UNE film ? d'ailleurs il faut rajouter film car il ne serait pas forcément faux de dire 'une course à ne pas rater' même si c'est hors-contexte</p>
+        </div>
+        <p class="catCorr" style="color: orange">À deux doigts de la perfection &#x301C;</p>
+        <div id="Cpresque" class="divcorr">
+            <p class="intit">&centerdot; Racontent (la vérité)</p>
+            <p>Il n'y a pas de mal a utiliser ce verbe mais raconter se rapporte le plus souvent à une ambiance apaisée : <i>"raconter une histoire"</i>, <i>"raconter sa journée"</i> or ici elles mettent tout au clair (se dire la vérité, toute la vérité, rien que la vérité), le climat est alors un peu tendu (en vrai j'en sais rien j'ai pas vu le film), et il y a un verbe pour ce genre de situations (et d'autres situations) : "Dire", mais dans tous les cas, on se dit la vérité et non on se raconte la vérité</p>
+            <p class="intit">&centerdot; elles (acceptent la...)</p>
+            <p>le sujet de la phrase est <i>"les amies"</i>, le elles se rapporte aux deux amies donc le pronom personnel sujet (pps) est inutile - en plus la phrase est plus jolie sans "elles" (le pps, pas les amies hein)</p>
+            <p class="intit">&centerdot; on le note à</p>
+            <p>&Ccedil;a sonne bizarre en vrai, je dirais plutôt <i>"on le note 8 sur 10"</i> mais encore une fois ça sonne bizarre, donc pour que ça ne sonne pas bizarre, je vous propose : <i>"on lui attribue la note de 8 sur 10"</i>, en plus c'est un peu plus littéraire que la formule précédente et vous sera peut-être valorisée</p>
+            <p class="intit">&centerdot;l'ami</p>
+            <p>L'ami(e) qui est en couple avec qqn est en fait un <i>petit-ami(e)</i></p>
+            <p class="intit">&centerdot; pas (traditionnelles)</p>
+            <p>Souvent, quand on parle de qqch de différent (surtout quand c'est qqch d'aussi "gros", qui englobe une multitude d'éléments pour la caractériser), il est peu probable que ce soit entièrement sans respecter les traditions (de toute façons ils finissent par s'embrasser donc on revient aux traditions :). C'est pourquoi je vous conseille dès lors d'être légèrement plus nuancées. Indice : il y a autant de lettres que dans "pas" et commence par un "p"&nbsp;:&emsp;Des histoires&nbsp;<input type="text"  id="RepPeu"  name="RepPeu"  size="4" />&nbsp;traditionnelles&nbsp;<button id="corrPeu" name="corrPeu" onclick="CorrigerPeu()">Vérifier</button>&emsp;<span id="Peu"></span></p>
+        </div>
+        <p class="catCorr" style="color: green">C'est parfait mais on peut toujours aller plus loin &check;</p>
+        <div id="Cproposition" class="divcorr">
+            <p class="intit">&centerdot; des scènes très longues et un peu lentes</p>
+            <p>Vous pouvez abréger ce morceau, d'autant plus qu'à l'écrit, on ne l'écrirait pas vraiment mais plutôt : <i>"De très longues scènes un peu lentes"</i> (p.s. Si j'étais vraiment chiant je vous aurais proposé de changer "un peu" dans ma version par "parfois")</p>
+        </div>
+    </section>
+ <script src="./script.js"></script>   
+</body>
